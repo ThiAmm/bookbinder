@@ -16,7 +16,7 @@ do
       pdfbook2 tmp/output_$i-$j.pdf
       rm tmp/output_$i-$j.pdf
   done
-  pdfunite tmp/output*.pdf $filename-output.pdf
+  pdfunite $(ls -v tmp/output*.pdf) $filename-output.pdf
   rm -rf tmp
 done
 
