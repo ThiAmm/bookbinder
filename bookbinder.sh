@@ -1,4 +1,5 @@
 #!/bin/bash
+bash ../convertTxtToPdf.sh $1
 cd $1
 for filename in $1/*.pdf; 
 do
